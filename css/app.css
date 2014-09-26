@@ -1,0 +1,27 @@
+body {
+	background: #f5f5f5;
+}
+
+  
+.icon-bar {
+	background: #008cba;
+}
+
+	.icon-bar > *:hover {
+		background: #333333;
+	}
+
+    
+.top-bar {
+	background: #008cba;
+}
+
+
+.footer_links :hover {
+    color: #333333;
+    /*font-weight: bold;*/
+}
+
+.hubba {
+	background: #f5f5f5;
+}
