@@ -77,14 +77,6 @@
         </div>
     </div>
 
-    <div class="row" id="practice_content">
-        <div class="row">
-            <div class="large-12 columns">
-                <h4>Meet the Practice</h4>
-            </div>
-        </div>
-    </div>
-
     <div class="row" id="smitha_content">
         <div class="row">
             <div class="large-12 columns">
@@ -266,41 +258,36 @@
             initialize();
         });
         
-        $('#practice_lnk, #practice_lnk_footer').on('click', function() {
-            $('#practice_content').show();
-            $('#home_content, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
-        });
-
         $('#smitha_lnk').on('click', function() {
             $('#smitha_content').show();
-            $('#home_content, #practice_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            $('#home_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
         });
 
         $('#elana_lnk').on('click', function() {
             $('#elana_content').show();
-            $('#home_content, #practice_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
+            $('#home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
         });
         
         $('#resources_lnk, #resources_lnk_footer').on('click', function() {
             $('#patient_content').show();
-            $('#home_content, #practice_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
+            $('#home_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
         });
         
         $('#forms_lnk, #forms_lnk_footer').on('click', function() {
             $('#forms_content').show();
-            $('#home_content, #practice_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
+            $('#home_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
         });
 
         $('#contact_lnk, #contact_lnk_footer').on('click', function() {
             $('#contact_content').show();
-            $('#home_content, #practice_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
+            $('#home_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
         });
         
         
         // Functions here:
         function initialize() {
             $('#home_content').show();
-            $('#practice_content, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            $('#smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
         }
     </script>
   </body>
