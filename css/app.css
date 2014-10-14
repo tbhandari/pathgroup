@@ -30,6 +30,11 @@ body {
 }
 
 
+.disclaimer {
+    font-size: 90%;
+}
+
+
 .footer_links :hover {
     color: #333333;
     /*font-weight: bold;*/
@@ -51,9 +56,4 @@ body {
 
 .pga_footer_copyright {
     font-size: 75%;
-}
-
-
-.disclaimer {
-    font-size: 90%;
 }
