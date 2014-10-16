@@ -9,7 +9,7 @@ body {
 }
 
 
-.main_container {
+.pga_main_container {
     padding: 2px 2px;
     background: #ffffff;
     border-radius: 10px;
@@ -30,14 +30,8 @@ body {
 }
 
 
-.disclaimer {
+.pga_disclaimer {
     font-size: 90%;
-}
-
-
-.footer_links :hover {
-    color: #333333;
-    /*font-weight: bold;*/
 }
 
 
@@ -46,7 +40,13 @@ body {
 }
 
 
-.pga_footer_add {
+.pga_footer_links :hover {
+    color: #333333;
+    /*font-weight: bold;*/
+}
+
+
+.pga_footer_address {
     text-align: center;
     background: #008cba;
     font-weight: bold;
