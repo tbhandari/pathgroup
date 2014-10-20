@@ -9,6 +9,18 @@ body {
 }
 
 
+@font-face {
+    font-family: walkway;
+    src: url(http://www.pathgroupatl.com/fonts/Walkway_Expand_Black.ttf);
+}
+
+
+.pga_font {
+    font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+
 .pga_main_container {
     padding: 2px 2px;
     background: #ffffff;

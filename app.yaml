@@ -27,6 +27,9 @@ handlers:
 - url: /resources
   static_dir: resources
 
+- url: /fonts
+  static_dir: fonts
+
 - url: /
   static_files: index.html
   upload: index.html
