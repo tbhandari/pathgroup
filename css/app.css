@@ -35,6 +35,12 @@ body {
 }
 
 
+.pga_temp_address {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+
 .pga_footer {
 	background: #f5f5f5;
 }

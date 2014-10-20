@@ -24,6 +24,9 @@ handlers:
 - url: /js/vendor
   static_dir: js/vendor
 
+- url: /resources
+  static_dir: resources
+
 - url: /
   static_files: index.html
   upload: index.html
