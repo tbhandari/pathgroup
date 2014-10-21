@@ -21,6 +21,12 @@ body {
 }
 
 
+.pga_font_home {
+    font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    text-align: right;
+}
+
+
 .pga_main_container {
     padding: 2px 2px;
     background: #ffffff;

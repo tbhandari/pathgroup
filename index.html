@@ -65,7 +65,15 @@
                     <h1><img src="img/pga_logo.jpg"></h1>
                 </div>
                 <div class="large-5 columns">
-                    <p class="pga_font">550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>404.235.5982</p>
+                    <p class="pga_font_home">550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>404.235.5982</p>
+                </div>
+            </div>
+            <div id="pga_logo_sb" class="row">
+                <div class="large-7 columns">
+                    <h1><img src="img/pga_logo.jpg"></h1>
+                </div>
+                <div class="large-5 columns">
+                    <p class="pga_font_home">550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>(O) 404.235.5982<br>(C) 404.917.3251<br>&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;</p>
                 </div>
             </div>
             
@@ -105,6 +113,11 @@
                         </div>
                         <div class="large-5 columns">
                             <img src="img/sb.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <p>To schedule an appointment please click on a day and time below.  If you are a parent scheduling an appointment for a child under 18, please enter your date of birth when prompted.  The system does not currently allow scheduling for patients under 18.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -284,7 +297,7 @@
       </div>
       <div class="row">
         <div class="large-12 columns">
-            <p class="pga_footer_address">550 Pharr Rd NE, Suite 305 | Atlanta, GA  30305 | 404.235.5982</p>
+            <p class="pga_font">550 Pharr Rd NE, Suite 305 | Atlanta, GA  30305 | 404.235.5982</p>
         </div>
       </div>
     </div>
@@ -305,35 +318,35 @@
         });
         
         $('#smitha_lnk').on('click', function() {
-            $('#smitha_content, #pga_logo_all').show();
-            $('#pga_logo_home, #home_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            $('#smitha_content, #pga_logo_sb').show();
+            $('#pga_logo_all, #pga_logo_home, #home_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
         });
 
         $('#elana_lnk').on('click', function() {
             $('#elana_content, #pga_logo_all').show();
-            $('#pga_logo_home, #home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
+            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
         });
         
         $('#resources_lnk, #resources_lnk_footer').on('click', function() {
             $('#patient_content, #pga_logo_all').show();
-            $('#pga_logo_home, #home_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
+            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
         });
         
         $('#forms_lnk, #forms_lnk_footer').on('click', function() {
             $('#forms_content, #pga_logo_all').show();
-            $('#pga_logo_home, #home_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
+            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
         });
 
         $('#contact_lnk, #contact_lnk_footer').on('click', function() {
             $('#contact_content, #pga_logo_all').show();
-            $('#pga_logo_home, #home_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
+            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
         });
         
         
         // Functions here:
         function initialize() {
             $('#home_content, #pga_logo_home').show();
-            $('#pga_logo_all, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            $('#pga_logo_all, #pga_logo_sb, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
         }
     </script>
   </body>
