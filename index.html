@@ -56,24 +56,11 @@
     <div class="row pga_main_container">
         <div class="large-12 columns">
             <div id="pga_logo_all" class="row">
-                <div class="large-12 columns">
-                    <h1><img src="img/pga_logo.jpg"></h1>
-                </div>
-            </div>
-            <div id="pga_logo_home" class="row">
                 <div class="large-7 columns">
                     <h1><img src="img/pga_logo.jpg"></h1>
                 </div>
                 <div class="large-5 columns">
-                    <p class="pga_font_home">550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>404.235.5982</p>
-                </div>
-            </div>
-            <div id="pga_logo_sb" class="row">
-                <div class="large-7 columns">
-                    <h1><img src="img/pga_logo.jpg"></h1>
-                </div>
-                <div class="large-5 columns">
-                    <p class="pga_font_home">550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>(O) 404.235.5982<br>(C) 404.917.3251<br>&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;</p>
+                    <p id="pga_logo_info" class="pga_logo_info_text"></p>
                 </div>
             </div>
             
@@ -318,35 +305,56 @@
         });
         
         $('#smitha_lnk').on('click', function() {
-            $('#smitha_content, #pga_logo_sb').show();
-            $('#pga_logo_all, #pga_logo_home, #home_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            setLogoInfoText("smitha");
+            $('#smitha_content').show();
+            $('#home_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
         });
 
         $('#elana_lnk').on('click', function() {
-            $('#elana_content, #pga_logo_all').show();
-            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
+            setLogoInfoText();
+            $('#elana_content').show();
+            $('#home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
         });
         
         $('#resources_lnk, #resources_lnk_footer').on('click', function() {
-            $('#patient_content, #pga_logo_all').show();
-            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
+            setLogoInfoText();
+            $('#patient_content').show();
+            $('#home_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
         });
         
         $('#forms_lnk, #forms_lnk_footer').on('click', function() {
-            $('#forms_content, #pga_logo_all').show();
-            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
+            setLogoInfoText();
+            $('#forms_content').show();
+            $('#home_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
         });
 
         $('#contact_lnk, #contact_lnk_footer').on('click', function() {
-            $('#contact_content, #pga_logo_all').show();
-            $('#pga_logo_home, #pga_logo_sb, #home_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
+            setLogoInfoText();
+            $('#contact_content').show();
+            $('#home_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
         });
         
         
         // Functions here:
         function initialize() {
-            $('#home_content, #pga_logo_home').show();
-            $('#pga_logo_all, #pga_logo_sb, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            setLogoInfoText("home");
+            $('#home_content').show();
+            $('#smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+        }
+        
+        function setLogoInfoText(whichPage) {
+            var whichText;
+            switch(whichPage) {
+                case "home":
+                    whichText = "550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>404.235.5982";
+                    break;
+                case "smitha":
+                    whichText = "550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>(O) 404.235.5982<br>(C) 404.917.3251<br>&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;";
+                    break;
+                default:
+                    whichText = "";
+            }
+            $('#pga_logo_info').html(whichText);
         }
     </script>
   </body>

@@ -15,13 +15,7 @@ body {
 }
 
 
-.pga_font {
-    font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    text-align: center;
-}
-
-
-.pga_font_home {
+.pga_logo_info_text {
     font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     text-align: right;
 }
