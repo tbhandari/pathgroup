@@ -312,7 +312,7 @@
         });
 
         $('#elana_lnk').on('click', function() {
-            setLogoInfoText();
+            setLogoInfoText("elana");
             $('#elana_content').show();
             $('#home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
         });
@@ -352,6 +352,9 @@
                 case "smitha":
                     whichText = "550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>(O) 404.235.5982<br>(C) 404.917.3251<br>&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;";
                     whichText += "<br><a href='#sbscheduling'>Online Scheduling</a>";
+                    break;
+                case "elana":
+                    whichText = "550 Pharr Rd NE, Suite 305<br>Atlanta, GA  30305<br>(O) 404.235.5982<br>(C) 404.664.6398<br>&#101;&#122;&#105;&#109;&#097;&#110;&#100;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;";
                     break;
                 default:
                     whichText = "";
