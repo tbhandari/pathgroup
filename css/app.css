@@ -70,7 +70,11 @@ body {
     background: #008cba;
     font-weight: bold;
     font-size: 90%;
+    color: black;
 }
+    .pga_footer_address > *:hover {
+        color: white;
+    }
 
 
 .pga_footer_copyright {
