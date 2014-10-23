@@ -9,6 +9,11 @@ body {
 }
 
 
+iframe {
+    border: none;
+}
+
+
 @font-face {
     font-family: walkway;
     src: url(http://www.pathgroupatl.com/fonts/Walkway_Expand_Black.ttf);
