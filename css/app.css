@@ -70,9 +70,9 @@ body {
     background: #008cba;
     font-weight: bold;
     font-size: 90%;
-    color: black;
+    color: #1c1c1c;
 }
-    .pga_footer_address > *:hover {
+    .pga_footer_address :hover {
         color: white;
     }
 
