@@ -14,6 +14,10 @@ iframe {
 }
 
 
+.pga_h1 {
+    word-wrap: break-word;
+}
+
 @font-face {
     font-family: walkway;
     src: url(http://www.pathgroupatl.com/fonts/Walkway_Expand_Black.ttf);
