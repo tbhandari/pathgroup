@@ -304,36 +304,42 @@
         // Set jQuery bind events here:
         $('#home_lnk, #path_lnk, #home_lnk_footer').on('click', function() {
             initialize();
+            ga('send', 'event', 'home_lnk', 'click', 'nav_links');
         });
         
         $('#smitha_lnk').on('click', function() {
             setLogoInfoText("smitha");
             $('#smitha_content').show();
             $('#home_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            ga('send', 'event', 'smitha_lnk', 'click', 'nav_links');
         });
 
         $('#elana_lnk').on('click', function() {
             setLogoInfoText("elana");
             $('#elana_content').show();
             $('#home_content, #smitha_content, #patient_content, #forms_content, #contact_content').hide();
+            ga('send', 'event', 'elana_lnk', 'click', 'nav_links');
         });
         
         $('#resources_lnk, #resources_lnk_footer').on('click', function() {
             setLogoInfoText();
             $('#patient_content').show();
             $('#home_content, #smitha_content, #elana_content, #forms_content, #contact_content').hide();
+            ga('send', 'event', 'resources_lnk', 'click', 'nav_links');
         });
         
         $('#forms_lnk, #forms_lnk_footer').on('click', function() {
             setLogoInfoText();
             $('#forms_content').show();
             $('#home_content, #smitha_content, #elana_content, #patient_content, #contact_content').hide();
+            ga('send', 'event', 'forms_lnk', 'click', 'nav_links');
         });
 
         $('#contact_lnk, #contact_lnk_footer').on('click', function() {
             setLogoInfoText();
             $('#contact_content').show();
             $('#home_content, #smitha_content, #elana_content, #patient_content, #forms_content').hide();
+            ga('send', 'event', 'contact_lnk', 'click', 'nav_links');
         });
         
         
