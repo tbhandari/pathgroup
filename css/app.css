@@ -69,7 +69,6 @@ iframe {
 
 .pga_footer_links :hover {
     color: #333333;
-    /*font-weight: bold;*/
 }
 
 
@@ -77,9 +76,8 @@ iframe {
     font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     text-align: center;
     background: #008cba;
-    font-weight: bold;
     font-size: 90%;
-    color: #1c1c1c;
+    color: #f5f5f5;
 }
     .pga_footer_address :hover {
         color: white;
