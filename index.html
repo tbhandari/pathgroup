@@ -280,7 +280,7 @@
     <div class="large-12 columns pga_footer">
       <div class="row show-for-medium-up">
         <div class="large-3 columns">
-          <p class="pga_footer_copyright">© 2014 Path Group of Atlanta LLC.<br>All Rights Reserved.</p>
+          <p class="pga_footer_copyright">© <span class="copyright_year"></span> Path Group of Atlanta LLC.<br>All Rights Reserved.</p>
         </div>
         <div class="large-9 columns">
           <ul class="inline-list right">
@@ -293,7 +293,7 @@
       </div>
       <div class="row show-for-small-only">
         <div class="large-12 columns">
-          <p class="pga_footer_copyright">© 2014 Path Group of Atlanta LLC.<br>All Rights Reserved.</p>
+          <p class="pga_footer_copyright">© <span class="copyright_year"></span> Path Group of Atlanta LLC.<br>All Rights Reserved.</p>
         </div>
       </div>
       <div class="row">
@@ -314,6 +314,7 @@
     <script>
         $(document).foundation();
         initialize();
+        $('.copyright_year').html((new Date).getFullYear());
         
         
         // Set jQuery bind events here:
