@@ -52,6 +52,10 @@ iframe {
 }
 
 
+.pga_pat_res {
+    text-decoration: underline;
+}
+
 .pga_disclaimer {
     font-size: 90%;
 }
