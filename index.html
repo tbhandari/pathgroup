@@ -215,7 +215,25 @@
                     </div>
                 </div>
             </div>
-
+            
+            <div class="row" id="rxrefill_content">
+                <div class="large-12 columns">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h4>Prescription Refill</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-video">
+                            <!--  <iframe src="https://docs.google.com/a/pathgroupatl.com/forms/d/1qKVPReMWgAHGKy9dBlrnE-7pMK2MndPetAsYSfzpTyI/viewform?embedded=true" width="760" height="100%" frameborder="0" marginheight="0" marginwidth="0"  webkitAllowFullScreen mozallowfullscreen allowFullScreen> -->
+                            <iframe src="https://docs.google.com/a/pathgroupatl.com/forms/d/1qKVPReMWgAHGKy9dBlrnE-7pMK2MndPetAsYSfzpTyI/viewform?embedded=true" frameborder="0" height="100%" width="100%">
+                                <p>Online Medication Refill Request Form submission is currently unavailable.  Please call <a href="tel:+14042355982">404.235.5982</a> or email <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;?&#115;&#117;&#098;&#106;&#101;&#099;&#116;=&#083;&#099;&#104;&#101;&#100;&#117;&#108;&#105;&#110;&#103;&#032;&#065;&#112;&#112;&#111;&#105;&#110;&#116;&#109;&#101;&#110;&#116;&#032;&#082;&#101;&#113;&#117;&#101;&#115;&#116;">&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;</a> for refill information.</p>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="row" id="contact_content">
                 <div class="large-12 columns">
                     <div class="row">
@@ -286,21 +304,6 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row" id="rxrefill_content">
-                <div class="large-12 columns">
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <h4>Prescription Refill</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <p>STUFF GOES HERE</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     
@@ -319,8 +322,8 @@
             <li class="pga_footer_links"><a href="#" id="home_lnk_footer">Home</a></li>
             <li class="pga_footer_links"><a href="#" id="resources_lnk_footer">Patient Resources</a></li>
             <li class="pga_footer_links"><a href="#" id="forms_lnk_footer">Patient Forms</a></li>
-            <li class="pga_footer_links"><a href="#" id="contact_lnk_footer">Contact Us</a></li>
             <li class="pga_footer_links"><a href="#" id="rxrefill_lnk_footer">Prescription Refill</a></li>
+            <li class="pga_footer_links"><a href="#" id="contact_lnk_footer">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -388,7 +391,14 @@
             ga('send', 'event', 'contact_lnk', 'click', 'nav_links');
         });
         
-        $('#rxrefill_lnk, rxrefill_lnk_footer, rxrefill_lnk_smitha').on('click', function() {
+        $('#rxrefill_lnk, #rxrefill_lnk_footer').on('click', function() {
+            setLogoInfoText();
+            $('#rxrefill_content').show();
+            $('#home_content, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
+            ga('send', 'event', 'rxrefill_lnk', 'click', 'nav_links');
+        });
+        
+        $('a').on('click', 'a.rxrefill_lnk_smitha', function() {
             setLogoInfoText();
             $('#rxrefill_content').show();
             $('#home_content, #smitha_content, #elana_content, #patient_content, #forms_content, #contact_content').hide();
@@ -412,13 +422,13 @@
                     whichText += "<br><a href=\"&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;?&#115;&#117;&#098;&#106;&#101;&#099;&#116;=&#080;&#097;&#116;&#104;&#032;&#071;&#114;&#111;&#117;&#112;&#032;&#073;&#110;&#113;&#117;&#105;&#114;&#121;\">&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;</a>";
                     whichText += "<br><a href=\"&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#122;&#105;&#109;&#097;&#110;&#100;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;?&#115;&#117;&#098;&#106;&#101;&#099;&#116;=&#080;&#097;&#116;&#104;&#032;&#071;&#114;&#111;&#117;&#112;&#032;&#073;&#110;&#113;&#117;&#105;&#114;&#121;\">&#101;&#122;&#105;&#109;&#097;&#110;&#100;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;</a>";
                     whichText += "<br><a href=\"#\" onclick=\"loadSBInfo(); goToScheduling();\">Online Scheduling for Dr. Bhandari</a>";
+                    whichText += "<br><a href=\"#\" class=\"rxrefill_lnk_smitha\">Medication Refill Request Form</a>";
                     break;
                 case "smitha":
                     whichText += "<br>(C) <a href=\"tel:+14049173256\">404.917.3256</a>";
                     whichText += "<br><a href=\"&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;?&#115;&#117;&#098;&#106;&#101;&#099;&#116;=&#080;&#097;&#116;&#104;&#032;&#071;&#114;&#111;&#117;&#112;&#032;&#073;&#110;&#113;&#117;&#105;&#114;&#121;\">&#115;&#098;&#104;&#097;&#110;&#100;&#097;&#114;&#105;&#064;&#112;&#097;&#116;&#104;&#103;&#114;&#111;&#117;&#112;&#097;&#116;&#108;&#046;&#099;&#111;&#109;</a>";
                     whichText += "<br><a href=\"#\" onclick=\"goToScheduling();\">Online Scheduling</a>";
                     //whichText += "<br><a href=\"#\" onclick=\"goToMedReqForm();\">Medication Refill Request Form</a>";
-                    whichText += "<br><a href=\"#\" id=\"rxrefill_lnk_smitha\">Medication Refill Request Form</a>";
                     break;
                 case "elana":
                     whichText += "<br>(C) <a href=\"tel:+14046646398\">404.664.6398</a>";
