@@ -12,6 +12,12 @@ handlers:
 - url: /css
   static_dir: css
 
+- url: /custom/css
+  static_dir: custom/css
+
+- url: /custom/js
+  static_dir: custom/js
+
 - url: /img
   static_dir: img
 
