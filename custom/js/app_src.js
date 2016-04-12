@@ -15,8 +15,11 @@ var contentArr = [
     , '#rxrefill_content'
 ];
 
-initialize();
-$('.copyright_year').html((new Date).getFullYear());
+
+$(function() {
+    initialize();
+    $('.copyright_year').html((new Date).getFullYear());
+});
 
 
 
