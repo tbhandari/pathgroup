@@ -1,103 +1,132 @@
 html {
-  overflow-y: scroll;
-  overflow-x: hidden;
+   overflow-y: scroll;
+   overflow-x: hidden;
 }
 
 
 body {
-    background: #f5f5f5;
-    margin: 0;
+   background: #f5f5f5;
+   margin: 0;
 }
 
 
 iframe {
-    display: block;
-    border: none;
-    height: 100vh;
-    width: 100vw;
+   display: block;
+   border: none;
+   height: 100vh;
+   width: 100vw;
 }
 
 
 .pga_h1 {
-    word-wrap: break-word;
+   word-wrap: break-word;
+   font-size: 35%;
+   color: white;
+}
+   .pga_h1:hover { 
+      color: #EBEBEB;
+   }
+
+
+.top-bar {
+   background: #008cba;
 }
 
 
+.top-bar-right {
+   font-size: 75%;
+}
+
+
+.dropdown.menu {
+   background: #008cba;
+   color: #ffffff;
+}
+   .dropdown.menu :hover {
+      background: #00688B;
+      color: #EBEBEB;
+   }
+
+
+.top-bar-link {
+   color: #ffffff;
+}
+   .top-bar-link :hover {
+      /*color: #8EE5EE;*/
+      color: #EBEBEB;
+      /*background: #00688B;*/
+   }
+
+
 @font-face {
-    font-family: walkway;
-    src: url(http://www.pathgroupatl.com/fonts/Walkway_Expand_Black.ttf);
+   font-family: walkway;
+   src: url(http://www.pathgroupatl.com/fonts/Walkway_Expand_Black.ttf);
 }
 
 
 .pga_logo_info_text {
-    font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    text-align: right;
+   font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+   text-align: right;
 }
 
 
 .pga_main_container {
-    padding: 2px 2px;
-    background: #ffffff;
-    border-radius: 10px;
+   padding: 2px 2px;
+   background: #ffffff;
+   border-radius: 10px;
 }
 
 
 .icon-bar {
-	background: #008cba;
+   background: #008cba;
 }
-
-	.icon-bar > *:hover {
-		background: #333333;
-	}
-
-
-.top-bar {
-	background: #008cba;
-}
+   .icon-bar > *:hover {
+      background: #333333;
+   }
 
 
 .pga_pat_res {
-    text-decoration: underline;
+   text-decoration: underline;
 }
 
 
 .pga_disclaimer {
-    font-size: 90%;
+   font-size: 90%;
 }
 
 
 .pga_lists {
-    margin: 20px 0;
+   margin: 20px 0;
 }
 
 
 .pga_block_grid {
-    text-align: center;
+   text-align: center;
 }
 
 
 .pga_footer {
-	background: #f5f5f5;
+   background: #f5f5f5;
 }
 
 
 .pga_footer_links :hover {
-    color: #333333;
+   color: #333333;
 }
 
 
 .pga_footer_address {
-    font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    text-align: center;
-    background: #008cba;
-    font-size: 90%;
-    color: #f5f5f5;
+   font-family: walkway, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+   text-align: center;
+   background: #008cba;
+   font-size: 90%;
+   color: #f5f5f5;
 }
-    .pga_footer_address :hover {
-        color: white;
-    }
+   .pga_footer_address :hover {
+      color: white;
+   }
 
 
 .pga_footer_copyright {
-    font-size: 75%;
+   font-size: 75%;
 }
