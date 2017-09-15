@@ -1,8 +1,14 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
 /* humanstxt.org */
 
+
+/* TEAM */
+    Developer: Taneal Bhandari
+    Contact: tbhandari [at] pathgroupatl.com
+    From: Atlanta, GA
+
+	
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Notepad++, git
+    Last update: 2017/09/14
+    Doctype: HTML5
+    Components: Zurb Foundation, jQuery, HTML5, CSS3, JavaScript
+    Software: Notepad++, git, Google Cloud SDK
