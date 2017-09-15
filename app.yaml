@@ -41,3 +41,7 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
+
+- url: /humans.txt
+  static_files: humans.txt
+  upload: humans.txt
