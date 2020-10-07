@@ -8,7 +8,7 @@
 
 	
 /* SITE */
-    Last update: 2020/08/27
+    Last update: 2020/10/06
     Doctype: HTML5
     Components: Zurb Foundation, jQuery, HTML5, CSS3, JavaScript
     Software: Notepad++, git, Google Cloud SDK
