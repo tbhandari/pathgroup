@@ -1,5 +1,4 @@
 runtime: php83
-api_version: 1
 
 handlers:
 - url: /favicon.ico
