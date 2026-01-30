@@ -4,42 +4,55 @@ handlers:
 - url: /favicon.ico
   static_files: favicon.ico
   upload: favicon.ico
+  secure: always
 
 - url: /css
   static_dir: css
+  secure: always
 
 - url: /custom/css
   static_dir: custom/css
+  secure: always
 
 - url: /custom/js
   static_dir: custom/js
+  secure: always
 
 - url: /img
   static_dir: img
+  secure: always
 
 - url: /js
   static_dir: js
+  secure: always
 
 - url: /js/foundation
   static_dir: js/foundation
+  secure: always
 
 - url: /js/vendor
   static_dir: js/vendor
+  secure: always
 
 - url: /resources
   static_dir: resources
+  secure: always
 
 - url: /fonts
   static_dir: fonts
+  secure: always
 
 - url: /robots.txt
   static_files: robots.txt
   upload: robots.txt
+  secure: always
 
 - url: /
   static_files: index.html
   upload: index.html
+  secure: always
 
 - url: /humans.txt
   static_files: humans.txt
   upload: humans.txt
+  secure: always
